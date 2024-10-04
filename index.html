@@ -3,7 +3,104 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <title>Given design</title>
   </head>
-  <body></body>
+
+  <header>
+    <div>
+      <nav class="navbar">
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="menu-icon"> 
+          <i class="fa fa-bars"></i>
+        </label>
+        <ul class="nav-list">
+          <li><a href="#home" class="active">Hem</a></li>
+          <li><a href="#about">Om</a></li>
+          <li><a href="#contact">Kontakt</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <body>
+
+      <main class="wrapper">  
+
+        <section id="home" class="homepage">
+          <h1>Welcome to nature</h1>
+          <p> A journey throug time and sheep</p>
+         <p>To see how ...cotton .. is mage, made I mean...</p>
+
+         <!--lägg till pilen down pilen här-->
+         <a href="#about" class="scroll-link">
+          <i class="fa-solid fa-circle-down arrow-icon"></i></a>
+        </section>
+      </main>
+
+
+      <section id="about">
+        <h2 class="heading">Träffa laget</h2>
+      
+        <div class="team-container">
+          <!-- Vänster sida -->
+          <div class="left-section">
+            <div class="about-items">  
+              <div class="info-name"><p>Rakib</p>
+                <img class="info-image" src="assets/profiles/Rakib_Square.png" alt="">
+              </div>
+              <div class="info-content"><p><i class="fa-solid fa-quote-right"></i> Rakib är vår vassaste node-utvecklare och håller ständigt ett öga på nya tekniker</p></div> 
+            </div>  
+      
+            <div class="about-items">  
+              <div class="info-name"><p>Lasse</p>
+                <img class="info-image" src="assets/profiles/NoPerson_Square.png" alt="">
+              </div>
+              <div class="info-content"><p> <i class="fa-solid fa-quote-right"></i> Gör övriga saker... mestadels</p></div>    
+            </div>
+          </div>
+      
+          <!-- Höger sida -->
+          <div class="right-section">
+            <div class="about-items">
+              <div class="info-name"><p>Alexandra</p>
+                <img class="info-image" src="assets/profiles/Alexandra_Square.png" alt="">
+              </div>
+              <div class="info-content"><p><i class="fa-solid fa-quote-right"></i> Alexandra håller reda på alla överallt och ser till att det flyter</p></div> 
+            </div>
+      
+            <div class="about-items">
+              <div class="info-name"><p>Sebastian</p>
+                <img class="info-image" src="assets/profiles/Sebastian_Square.png" alt="">
+              </div>
+              <div class="info-content"><p><i class="fa-solid fa-quote-right"></i> En av våra utbildare som har erfarenhet av ganska många saker</p></div>    
+            </div>
+
+            <a href="#contact" class="scroll-link-about">
+              <i class="fa-solid fa-circle-down about-arrow-icon"></i>
+            </a>
+         
+      </section>
+  
+
+      <footer id="contact">
+        <div>
+          <p>Tegel Consulting AB</p>
+          <p>Agatvägen 18</p>
+          <p>168 60 Bromma</p>
+          <p></p>
+        </div>
+        <div>
+          <p>info at tegelconsulting.se</p>
+          <p>070-123 456 78</p>
+        </div>
+        <div>
+          <div><i class="fa-brands fa-instagram"></i>Instagram</div>
+          <div><i class="fa-brands fa-twitter"></i>Twitter</div>
+          <div><i class="fa-brands fa-facebook"></i>Facebook</div>
+        </div>
+      </footer>
+
+  </body>
 </html>

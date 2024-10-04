@@ -1,0 +1,344 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Header style */
+
+header .navbar {
+  height: 80px;
+  width: 100%;
+  background: rgba(207, 213, 188, 0.222);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  justify-content: end;
+  padding: 0 20px;
+  z-index: 1000;
+  margin-bottom: -80px;
+}
+
+/* Hero style */
+.wrapper {
+  background: url(negative-space-black-forest-dawn.jpg);
+  background-size: cover;
+  height: 100vh;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden; /* Förhindrar att innehåll rullar utanför när menyn är aktiv */
+}
+
+
+/* About us style */
+
+
+#menu-toggle {
+  display: none;
+}
+
+.menu-icon {
+  display: none;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+
+.nav-list {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-evenly;
+  width: 40%;
+  margin-left: auto;
+}
+
+
+.navbar ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  padding: 6px 13px;
+  font-family: 'Lucida Sans', Geneva, Verdana, sans-serif;
+}
+
+.navbar ul li a.active,
+.navbar ul li a:hover {
+  text-decoration-line: underline;
+  border-radius: 3%;
+}
+
+/*  för Mobile  */
+@media screen and (max-width: 768px) {
+  
+  .menu-icon {
+      display: block;
+      color: white;
+  }
+
+  
+  .nav-list {
+      display: flex;
+      flex-direction: column;
+      background:rgba(219, 233, 219, 0.089);
+      position: absolute;
+      top: 50px;
+      right: 0;
+      width: 100%; 
+      justify-content: center;
+      align-items: center;
+      transition: transform 0.3s ease;
+      transform: translateX(100%); 
+      z-index: 999;
+  }
+
+  
+  #menu-toggle:checked + .menu-icon + .nav-list {
+      transform: translateY(0); 
+  }
+
+  .nav-list li {
+      margin: 20px 0;
+  }
+
+  .arrow-icon {
+    font-size: 10vw; 
+    color: white; 
+    position: fixed; 
+    top: 20px; 
+    left: 50%; 
+    transform: translateX(-50%);
+    cursor: pointer;
+  } 
+
+
+
+
+  .team-container {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .left-section, .right-section {
+      width: 100%;  
+  }
+
+  .about-items {
+      margin-bottom: 70px;
+      text-align: center;
+      
+  }
+
+  
+
+  .info-image {
+      width: 80%;
+      height: auto;
+      border-radius: 50%;
+      margin-left: -60px;
+  }
+
+ 
+  footer {
+      flex-direction: column; 
+      align-items: center;
+      padding: 20px 0;
+  }
+
+  footer div {
+      margin: 10px 0;
+  }
+}
+
+/* För tablets och mindre desktop */
+@media  screen and ( min-width: 769px) and (max-width: 1200px){
+  .nav-list{
+    width: 60%;
+  }
+
+  .homepage h1{
+    font-size: 2.5rem;
+
+  }
+  .homepage p {
+    font-size: 1,5rem;
+  }
+
+.left-section, .right-section{
+  width: 45%;
+}
+
+.info-image {
+  width: 60%;
+  margin-left: auto;
+}
+
+
+
+}
+
+/* för större desktops */
+
+@media screen and (min-width: 1201px) {
+  .homepage h1 {
+    font-size: 3rem;
+  }
+
+  .homepage p {
+    font-size: 2rem;
+  }
+
+  .left-section,
+  .right-section {
+    width: 40%;
+  }
+
+  .info-image {
+    width: 300px; 
+    height: 300px;
+  }
+
+}
+
+
+
+
+.homepage {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: white;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  user-select: none;
+}
+
+.homepage h1 {
+  font-size: 2.5rem;
+  padding-bottom: 30px;
+}
+
+.homepage p {
+  margin-top: 20px;
+  font-size: 2rem;
+}
+
+
+.heading {
+  font-size: 2rem;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+
+.arrow-icon {
+  font-size: 27px; 
+  color: white; 
+  position: fixed;
+   /* Absolut positionering */
+   top: 450px; /* Placera pilen 20px från botten av skärmen */
+   left: 50%; /* Flytta pilen horisontellt till mitten */
+  transform: translateX(-50%);
+  cursor: pointer;
+} 
+
+
+.scroll-link {
+  text-decoration: none;
+}
+
+.scroll-link:focus,
+.scroll-link:hover {
+  color: rgb(224, 215, 215); 
+}
+
+
+.about-arrow-icon {
+  font-size: 30px; 
+  color: rgb(9, 4, 4); 
+  position: absolute; 
+  bottom: 20px; 
+  left: 50%; 
+  transform: translateX(-50%);
+  cursor: pointer; 
+}
+
+
+#about{
+  position: relative;
+}
+
+
+
+.team-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+
+.left-section, .right-section {
+  width: 40%;
+  text-align: center;
+}
+
+.about-items {
+  margin-bottom: 80px;
+}
+
+.info-name {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  padding: 10px;;
+}
+
+.info-image {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  margin-top: 10px;
+  box-shadow: 0px 5px 25px;
+  color: black;
+}
+
+.info-content {
+  width: 100%;
+  height: 80%;
+  background-color: rgb(227, 224, 224);
+  padding: 20px;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.info-content p {
+  padding: 30 50px;
+}
+
+
+footer {
+  background: black;
+  color: white;
+  text-align: center;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+footer div p {
+  margin: 10px 0;
+  padding: 5px;
+}
+
+footer div i {
+  margin-right: 10px;
+  padding: 10px;
+}
