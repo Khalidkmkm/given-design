@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/7O3utUNR)
 # Given design
 
@@ -34,3 +35,6 @@ Inga speciella fonter har använts i denna uppgift så det går bra att använda
 - Ni har använt er av flex/grid för nästan all struktur/css
 - Sidan är fullt responsiv enligt krav
 - Använda SCSS
+=======
+# given-design
+>>>>>>> f934ba09e74cd3b90e40882eb701b4789b2b4bda
